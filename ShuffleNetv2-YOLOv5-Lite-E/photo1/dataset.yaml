@@ -1,0 +1,5 @@
+train: ./photo1/train/images
+val: ./photo1/valid/images
+test: ./photo1/test/images
+nc: 1
+names: ['tea_bud']
