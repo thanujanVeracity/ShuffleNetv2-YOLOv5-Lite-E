@@ -25,7 +25,7 @@
 
 
 storage.googleapis.com
-runs/*
+#runs/*
 data/*
 data/images/*
 !data/*.yaml
