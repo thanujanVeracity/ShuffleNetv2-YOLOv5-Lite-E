@@ -3,7 +3,7 @@ import shutil
 
 
 # Get all the list of files 
-files = os.listdir("./Shufflenet_data")
+files = os.listdir("./photo1")
 
 
 # Split the files into train and valid 
@@ -44,11 +44,11 @@ os.mkdir(train_label_path)
 os.mkdir(valid_label_path)
 os.mkdir(valid_image_path)
 
-print("./Shufflenet_data/" + train_images[i], train_image_path + train_images[i])
+
 for i in range(len(train_images)):
-    shutil.move("./Shufflenet_data/" + train_images[i], train_image_path )
-    shutil.move("./Shufflenet_data/" + train_labels[i], train_label_path)
+    shutil.move("./photo1/" + train_images[i], train_image_path )
+    shutil.move("./photo1/" + train_labels[i], train_label_path)
 
 for i in range(len(valid_images)):    
-    shutil.move("./Shufflenet_data/" +valid_images[i], valid_image_path )
-    shutil.move("./Shufflenet_data/" + valid_labels[i], valid_label_path )
+    shutil.move("./photo1/" +valid_images[i], valid_image_path )
+    shutil.move("./photo1/" + valid_labels[i], valid_label_path )
